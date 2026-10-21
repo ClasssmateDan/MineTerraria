@@ -1,5 +1,15 @@
 # 验证记录
 
+## v0.24.2
+
+公开源码目录由DimensionalTerraria改为MineTerraria，工程与入口源文件更名为MineTerraria.csproj／MineTerraria.cs。更新Build.ps1、Test.ps1、素材检查、素材生成工具、Core编译引用、README、配方版本及素材来源清单中的文件路径；历史开发说明保留当时名称并加路径迁移说明。原图像文件没有重新生成或编辑。
+
+本地真实tModLoader的ModCompile.ReadBuildInfo确认官方打包器直接用源目录末级名称生成内部包名，因此Build.ps1编译公开工程后，把打包输入复制到Git忽略的.dev/package-source/DimensionalTerraria，再使用已编译的原名程序集执行官方打包。复制排除bin／obj，重建暂存目录前检查绝对路径、范围和重解析点。MineTerraria.csproj默认仅编译DLL；显式BuildMod=true会要求使用Build.ps1，防止误生成另一个内部ID的包。命名空间、程序集名、资源前缀、注册类型与本地化键继续使用DimensionalTerraria，以维持原存档标识。
+
+新目录下245项Core、两份HJSON、素材及版本文件保留检查通过；Build.ps1完成153项真实Steam引擎与16项实际包检查，编译零警告、零错误。包内BuildProperties确认显示名MineTerraria、内部名DimensionalTerraria；实际纹理、装备、透明图集及RawImg后台读取通过，TmodFile确认版本0.24.2和hash=True。交付artifacts/MineTerraria-v0.24.2.tmod，SHA-256 `01358FC042252323B1A5CAEEFF5E62E8BAFE1CCB105D6CB60816ACA76E143EE6`。旧v0.24.1仍为`2CBE360614ED6904F79D04CE9D7126C5495C93555EFA0775E42BA69C50D982E0`，未覆盖。
+
+源码包artifacts/MineTerraria-v0.24.2-source.zip使用新目录与工程文件，排除.dev、bin、obj、artifacts及不存在的旧Git跟踪路径，并确认没有旧DimensionalTerraria源码根目录。日志.dev/test-v0.24.2.log、.dev/build-v0.24.2.log、.dev/package-v0.24.2.log。本地文件修改未自动提交或推送；需要git add -A、提交并推送后，GitHub目录才会更新。没有启动游戏或使用computer-use；旧角色和世界实际载入仍需用户手测。
+
 ## v0.24.1
 
 漏斗新增替代配方：5个铁锭＋1个Minecraft箱子出1个漏斗；原版木箱配方保留。两条配方都由MinecraftRecipes统一添加Minecraft工作台限制。真实引擎检查分别匹配两种箱子，核对材料、数量、产物与工作台要求；全配方计数更新为78条，其中76条受工作台限制。现有离站不可制作和原版工作台不可替代检查覆盖新增配方。没有修改漏斗吸收、库存或运行行为。

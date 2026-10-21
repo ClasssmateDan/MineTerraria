@@ -5,5 +5,5 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  <ItemGroup><Compile Include="../../DimensionalTerraria/Core/*.cs" Link="Core/%(Filename)%(Extension)" /></ItemGroup>
+  <ItemGroup><Compile Include="../../MineTerraria/Core/*.cs" Link="Core/%(Filename)%(Extension)" /></ItemGroup>
 </Project>

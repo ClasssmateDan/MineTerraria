@@ -4,9 +4,14 @@
     <LangVersion>12.0</LangVersion>
     <Nullable>enable</Nullable>
     <AssemblyName>DimensionalTerraria</AssemblyName>
+    <!-- Packaging uses scripts/Build.ps1 to preserve the legacy save identity. -->
+    <BuildMod Condition="'$(BuildMod)' == ''">false</BuildMod>
     <TmlDirectory Condition="'$(TmlDirectory)' == ''">$(MSBuildThisFileDirectory)..\.dev\tModLoader</TmlDirectory>
   </PropertyGroup>
   <Import Project="$(TmlDirectory)\tMLMod.targets" Condition="Exists('$(TmlDirectory)\tMLMod.targets')" />
+  <Target Name="RequireIdentityPreservingPackage" BeforeTargets="BuildMod" Condition="'$(BuildMod)' == 'true'">
+    <Error Text="Package with scripts/Build.ps1 so the MineTerraria source folder preserves the DimensionalTerraria save identity." />
+  </Target>
   <Target Name="CheckTmodLoader" BeforeTargets="PrepareForBuild" Condition="!Exists('$(TmlDirectory)\tMLMod.targets')">
     <Error Text="tModLoader was not found. Run scripts/Setup.ps1 or specify -p:TmlDirectory=YOUR_TMODLOADER_DIRECTORY." />
   </Target>

@@ -5,45 +5,46 @@
   "textures": [
     {
       "name": "redstone",
-      "path": "DimensionalTerraria/Textures/Minecraft/redstone.png",
+      "path": "MineTerraria/Textures/Minecraft/redstone.png",
       "archiveEntry": "assets/minecraft/textures/item/redstone.png",
       "sha256": "6D0E6A1FD54142CD3DE649E1100C428733512B322A0B0A530F62EAE9F86881EC"
     },
     {
       "name": "redstone_block",
-      "path": "DimensionalTerraria/Textures/Minecraft/redstone_block.png",
+      "path": "MineTerraria/Textures/Minecraft/redstone_block.png",
       "archiveEntry": "assets/minecraft/textures/block/redstone_block.png",
       "sha256": "92C8738669B45A956F4783F3D928CA3D3B99A56546650070B24779428BF50291"
     },
     {
       "name": "piston_top",
-      "path": "DimensionalTerraria/Textures/Minecraft/piston_top.png",
+      "path": "MineTerraria/Textures/Minecraft/piston_top.png",
       "archiveEntry": "assets/minecraft/textures/block/piston_top.png",
       "sha256": "1835A66720F10230D9BB4CA307EACA1F9D4585B73BE25F4778B1B592804836F5"
     },
     {
       "name": "piston_top_sticky",
-      "path": "DimensionalTerraria/Textures/Minecraft/piston_top_sticky.png",
+      "path": "MineTerraria/Textures/Minecraft/piston_top_sticky.png",
       "archiveEntry": "assets/minecraft/textures/block/piston_top_sticky.png",
       "sha256": "432BA061EC855A1F8607A81CC1BECF82D6070CE3C2B70F3ECD9D931656BF13F3"
     },
     {
       "name": "piston_bottom",
-      "path": "DimensionalTerraria/Textures/Minecraft/piston_bottom.png",
+      "path": "MineTerraria/Textures/Minecraft/piston_bottom.png",
       "archiveEntry": "assets/minecraft/textures/block/piston_bottom.png",
       "sha256": "D997EE5E249498121CF17BCCE08620B7E268F68B994E7EB665E5CC3EA34FB8BF"
     },
     {
       "name": "piston_side",
-      "path": "DimensionalTerraria/Textures/Minecraft/piston_side.png",
+      "path": "MineTerraria/Textures/Minecraft/piston_side.png",
       "archiveEntry": "assets/minecraft/textures/block/piston_side.png",
       "sha256": "0B8280A55F499A704B42E39F2BE1CB68479484EB72384F56AB715D4432AFAA7B"
     },
     {
       "name": "piston_inner",
-      "path": "DimensionalTerraria/Textures/Minecraft/piston_inner.png",
+      "path": "MineTerraria/Textures/Minecraft/piston_inner.png",
       "archiveEntry": "assets/minecraft/textures/block/piston_inner.png",
       "sha256": "C4361091B3F3D4A7018390FB75F6E5D7BEB0ECC26D533EE201015AC9EFD414AA"
     }
-  ]
+  ],
+  "sourcePathNote": "Repository paths rebased to MineTerraria/ in v0.24.2; original asset bytes and hashes are unchanged."
 }

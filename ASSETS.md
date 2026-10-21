@@ -2,13 +2,13 @@
 
 ## v0.24.0 MineTerraria 下界合金
 
-新材料直接使用已校验Minecraft Java 1.21.1官方客户端中的`assets/minecraft/textures/item/netherite_ingot.png`，逐字节提取到`DimensionalTerraria/Textures/Minecraft/netherite_ingot.png`。保留原16×16透明图标，SHA-256为`21418E66CA43961E91FB8CFBA645A4364CA340426BCA82F073D140F202DFE28B`。已本地查看；自动素材检查与客户端归档逐字节比较，打包后另用原生ImageIO在后台线程解码。没有AI重绘或新增其他材料图片。
+新材料直接使用已校验Minecraft Java 1.21.1官方客户端中的`assets/minecraft/textures/item/netherite_ingot.png`，逐字节提取到`MineTerraria/Textures/Minecraft/netherite_ingot.png`。保留原16×16透明图标，SHA-256为`21418E66CA43961E91FB8CFBA645A4364CA340426BCA82F073D140F202DFE28B`。已本地查看；自动素材检查与客户端归档逐字节比较，打包后另用原生ImageIO在后台线程解码。没有AI重绘或新增其他材料图片。
 
 本版与历史版本的来源清单均收录在可提交的`docs/asset-sources/`，不依赖被Git忽略的构建输出目录。模组更名不改变既有贴图路径、物品类型与存档标识。
 
 ## v0.23.0 烟花
 
-使用已校验的Minecraft Java 1.21.1官方客户端归档，逐字节提取`assets/minecraft/textures/item/firework_rocket.png`为`DimensionalTerraria/Textures/Minecraft/firework_rocket.png`。保留16×16尺寸、原始像素与透明背景；SHA-256为`FEA5F8FDF3A1517EDBC7006D327FE09B8567A0E4C2E76F8AEB8AEAC68EABF786`。来源网址、客户端SHA-1及归档路径见`docs/asset-sources/asset-sources-v0.23.0.json`。没有AI重绘、修改其他素材或在加载线程读取GPU。
+使用已校验的Minecraft Java 1.21.1官方客户端归档，逐字节提取`assets/minecraft/textures/item/firework_rocket.png`为`MineTerraria/Textures/Minecraft/firework_rocket.png`。保留16×16尺寸、原始像素与透明背景；SHA-256为`FEA5F8FDF3A1517EDBC7006D327FE09B8567A0E4C2E76F8AEB8AEAC68EABF786`。来源网址、客户端SHA-1及归档路径见`docs/asset-sources/asset-sources-v0.23.0.json`。没有AI重绘、修改其他素材或在加载线程读取GPU。
 
 ## v0.22.0 背景定位与录制怪群
 
@@ -54,7 +54,7 @@ Steve原始PNG保持逐字节不变。`scripts/PrepareProjectionAssets.ps1`新�
 
 ## v0.18.0 村民
 
-`DimensionalTerraria/Textures/Villager.png`由内置image_gen生成，1254×1254透明PNG、4列×2行，棕袍、长鼻、交叠手臂的Minecraft平原村民风格。八帧依次为待机、行走A、行走B、行走C、行走D、受惊奔跑、眨眼、受击；以待机高度统一缩放到42像素、脚底锚定，实体20×42，二维和三维共用IPixelCreature裁帧。没有攻击姿态。原图复制到项目内，未修改其他素材。
+`MineTerraria/Textures/Villager.png`由内置image_gen生成，1254×1254透明PNG、4列×2行，棕袍、长鼻、交叠手臂的Minecraft平原村民风格。八帧依次为待机、行走A、行走B、行走C、行走D、受惊奔跑、眨眼、受击；以待机高度统一缩放到42像素、脚底锚定，实体20×42，二维和三维共用IPixelCreature裁帧。没有攻击姿态。原图复制到项目内，未修改其他素材。
 
 完整提示词、内置工具信息、原始位置和SHA-256见`artifacts/asset-prompts-v0.18.0.json`。源图已查看，自动检查确认8帧分别可裁切、脚底有效且背景透明；游戏内动作和尺寸仍需实测。
 
@@ -72,7 +72,7 @@ v0.14.1修正加载阶段的像素来源：tModLoader打包时已把PNG转换为
 
 v0.14.0新增橡木板与Minecraft工作台，直接从Mojang官方Java 1.21.1客户端提取原版PNG，不使用AI重新生成。官方版本清单为`https://piston-meta.mojang.com/mc/game/version_manifest_v2.json`，客户端`https://piston-data.mojang.com/v1/objects/30c73b1c5da787909b2f73340419fdf13b9def88/client.jar`，SHA-1校验为`30c73b1c5da787909b2f73340419fdf13b9def88`。
 
-项目内`DimensionalTerraria/Textures/Minecraft/`包含`oak_planks.png`、`crafting_table_front.png`、`crafting_table_side.png`、`crafting_table_top.png`，均为16×16不透明原始文件，与归档中的`assets/minecraft/textures/block/`对应文件逐字节哈希一致。完整URL、SHA-256和归档路径记录在`docs/asset-sources/asset-sources-v0.14.0.json`。这些原版材质来自Mojang/Minecraft。
+项目内`MineTerraria/Textures/Minecraft/`包含`oak_planks.png`、`crafting_table_front.png`、`crafting_table_side.png`、`crafting_table_top.png`，均为16×16不透明原始文件，与归档中的`assets/minecraft/textures/block/`对应文件逐字节哈希一致。完整URL、SHA-256和归档路径记录在`docs/asset-sources/asset-sources-v0.14.0.json`。这些原版材质来自Mojang/Minecraft。
 
 立方体物品图标使用现有代码像素系统把上述三面投影到24×24透明图标，不修改四张源材质。三维工作台为不同面的纹理分别建立网格批次；二维正面保持原版16×16。预制铁傀儡没有新画皮肤，复用既有铁傀儡图集第0帧，透明裁剪后等比像素采样为32×40图标；所有物品绘制共用该运行时纹理，避免整张多姿势图集显示在背包或手中。预览与源材质尺寸／透明度／来源一致性已检查。
 
@@ -82,9 +82,9 @@ v0.14.0新增橡木板与Minecraft工作台，直接从Mojang官方Java 1.21.1�
 
 | 文件 | 用途与动作 | 游戏内尺寸 |
 |---|---|---|
-| `DimensionalTerraria/Textures/Steve.png` | 4×2图集：待机、行走A、过渡、行走B、反向过渡、跳跃、攻击准备、攻击结束 | 静止高度42像素，保持各帧比例，脚底对齐 |
-| `DimensionalTerraria/Textures/Sheep.png` | 4×2图集：待机、行走A、过渡、行走B、反向过渡、吃草、眨眼、受击 | 静止高度28像素，实体34×28，脚底对齐 |
-| `DimensionalTerraria/Textures/HigherDimensionalProjection.png` | 附魔下界合金剑风格单帧，刃尖右上、剑柄左下 | 二维绘制源图最长边缩放到48像素，挥剑定位同样采用48像素逻辑帧；三维沿用手持物品尺寸上限 |
+| `MineTerraria/Textures/Steve.png` | 4×2图集：待机、行走A、过渡、行走B、反向过渡、跳跃、攻击准备、攻击结束 | 静止高度42像素，保持各帧比例，脚底对齐 |
+| `MineTerraria/Textures/Sheep.png` | 4×2图集：待机、行走A、过渡、行走B、反向过渡、吃草、眨眼、受击 | 静止高度28像素，实体34×28，脚底对齐 |
+| `MineTerraria/Textures/HigherDimensionalProjection.png` | 附魔下界合金剑风格单帧，刃尖右上、剑柄左下 | 二维绘制源图最长边缩放到48像素，挥剑定位同样采用48像素逻辑帧；三维沿用手持物品尺寸上限 |
 
 三张源图实际均为1254×1254 PNG。人物、羊的逻辑帧由4×2网格限定，再按透明区域计算绘制框，避免把整张图集叠画为一个实体。源图中各姿势并非完全等大，因此按静止姿势统一缩放，固定脚底，不逐帧拉伸。人物小地图头像暂保留原版。
 
@@ -92,12 +92,12 @@ v0.14.0新增橡木板与Minecraft工作台，直接从Mojang官方Java 1.21.1�
 
 完整提示词、原始生成路径和模组内路径保存在 [`artifacts/asset-prompts-v0.9.0.json`](artifacts/asset-prompts-v0.9.0.json)。第一人称手臂是代码绘制的方形几何体，青蓝袖子RGB(0,165,173)、肉色手RGB(184,137,110)，没有额外贴图。背景复用当前tModLoader的原版素材。
 
-v0.10.0的27种压缩方块与羊蛋采用代码定义的原生尺寸像素素材：[ContentPixelArt.cs](DimensionalTerraria/Core/ContentPixelArt.cs)。方块面16×16、立方体图标24×24、灰白斑点羊蛋16×24，按材料调色板区分。客户端通过当前引擎的RawImg读取器创建各模组物品／方块的纹理，不修改原版素材，不生成额外大图；真实引擎检查覆盖格式解码。方块每格显示独立的镶边面。
+v0.10.0的27种压缩方块与羊蛋采用代码定义的原生尺寸像素素材：[ContentPixelArt.cs](MineTerraria/Core/ContentPixelArt.cs)。方块面16×16、立方体图标24×24、灰白斑点羊蛋16×24，按材料调色板区分。客户端通过当前引擎的RawImg读取器创建各模组物品／方块的纹理，不修改原版素材，不生成额外大图；真实引擎检查覆盖格式解码。方块每格显示独立的镶边面。
 
 v0.10.1修正立方体侧面的投影公式：上表面与两侧面连续，底部中央接缝向下延伸，形成闭合六边形轮廓。自动检查覆盖逐行连通、中央无透明裂缝、左右明暗及透明外缘，材质调色板和原生尺寸保持不变。
 
 v0.11.0的三维天顶剑剑影直接复用原版物品贴图与FinalFractalHelper中的拖尾颜色，飞龙剑气复用原版ProjectileID.DD2SquireSonicBoom贴图；拖尾使用接受三维深度测试的彩色网格。没有生成新图片，也没有直接调用原版基于屏幕坐标的FinalFractal着色器。
 
-v0.12.0新增`DimensionalTerraria/Textures/IronGolem.png`，由内置image_gen生成，透明PNG，实际尺寸1774×887，4列×2行。八帧依次为待机、行走A、行走过渡、行走B、行走返回、蓄力、双臂上挑、受击。外观为白灰色铁质方形身体、长臂、红眼、长鼻及绿色藤蔓。以第0帧身高统一缩放到76像素，动作中不逐帧拉伸，按各帧实际脚底锚点绘制；二维与三维通过IPixelCreature共用裁帧、缩放、朝向和锚点。三维只在真实图集就绪时绘制，避免临时纹理或整张图集被当成单个生物。透明背景允许接近零的边缘Alpha，轮廓提取使用原有128阈值。
+v0.12.0新增`MineTerraria/Textures/IronGolem.png`，由内置image_gen生成，透明PNG，实际尺寸1774×887，4列×2行。八帧依次为待机、行走A、行走过渡、行走B、行走返回、蓄力、双臂上挑、受击。外观为白灰色铁质方形身体、长臂、红眼、长鼻及绿色藤蔓。以第0帧身高统一缩放到76像素，动作中不逐帧拉伸，按各帧实际脚底锚点绘制；二维与三维通过IPixelCreature共用裁帧、缩放、朝向和锚点。三维只在真实图集就绪时绘制，避免临时纹理或整张图集被当成单个生物。透明背景允许接近零的边缘Alpha，轮廓提取使用原有128阈值。
 
 完整提示词、内置工具信息、生成路径与项目路径见[`artifacts/asset-prompts-v0.12.0.json`](artifacts/asset-prompts-v0.12.0.json)。自动检查确认八个姿态都可独立安全选择，脚底锚点有效且有真实透明背景；没有程序生成或重绘该生物素材。

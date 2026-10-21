@@ -2,9 +2,9 @@
 
 将 **Minecraft** 的方块与生物带入 **Terraria**，并允许玩家飞出二维地图，在第一人称三维视角下观察、建造和战斗。
 
-当前版本：**0.24.1** · tModLoader 1.4.4 · 单人模式
+当前版本：**0.24.2** · tModLoader 1.4.4 · 单人模式
 
-MineTerraria 由 Minecraft 的 Mine 与 Terraria 拼合而成。原内部模组标识 `DimensionalTerraria` 保持不变，原有角色、世界与模组物品沿用该标识。
+MineTerraria 由 Minecraft 的 Mine 与 Terraria 拼合而成。原内部模组标识 `DimensionalTerraria` 保持不变，原有角色、世界与模组物品沿用该标识。公开源码目录与工程文件现为 `MineTerraria/MineTerraria.csproj`，GitHub 根目录也使用新名称。
 
 ## 玩法
 
@@ -21,7 +21,7 @@ MineTerraria 由 Minecraft 的 Mine 与 Terraria 拼合而成。原内部模组�
 ## 安装
 
 1. 安装 Terraria 与 tModLoader。本版在 Windows 的 tModLoader **v2026.08.3.0 / Terraria 1.4.4.9** 上编译并验证。
-2. 将 `MineTerraria-v0.24.1.tmod` 放入 tModLoader 的 Mods 文件夹，仅保留一个版本。
+2. 将 `MineTerraria-v0.24.2.tmod` 放入 tModLoader 的 Mods 文件夹，仅保留一个版本。
 3. 启用 **MineTerraria**，进入单人世界。在模组配置中调整三维选项。
 
 从旧版本升级时无需改名已有角色或世界。角色选择页的“新建 Steve 角色”用于创建独立外观，不会替换所有角色。
@@ -61,6 +61,8 @@ MineTerraria 由 Minecraft 的 Mine 与 Terraria 拼合而成。原内部模组�
 .\scripts\Test.ps1
 .\scripts\Build.ps1 -TmlDirectory '你的Steam库\steamapps\common\tModLoader'
 ```
+
+直接 `dotnet build` 只编译程序集；打包请使用 `Build.ps1`。脚本在被 Git 忽略的 `.dev/package-source/DimensionalTerraria` 临时目录中调用官方打包器，使源码目录更名后仍保留原存档标识。
 
 `Test.ps1` 校验核心逻辑、本地化与素材；`Build.ps1` 使用指定引擎运行原生 API 检查并执行官方打包。新包输出至 `artifacts/MineTerraria-v版本.tmod`，同版本重建会添加后缀并保留已有文件。`scripts/Setup.ps1` 可下载历史固定版开发依赖；本版推荐使用上述已安装的 Steam 引擎路径。
 

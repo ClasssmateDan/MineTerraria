@@ -1,5 +1,12 @@
 # 更新记录
 
+## 0.24.2
+
+- 公开源码目录改为MineTerraria，工程文件与入口源文件改为MineTerraria.csproj和MineTerraria.cs。
+- 同步构建、测试、素材工具与文档中的文件路径。
+- 内部模组标识保持DimensionalTerraria，官方打包改从Git忽略的临时目录执行，以继续使用原存档中的物品与世界数据标识。
+- 直接dotnet build只编译程序集，正式打包统一使用scripts/Build.ps1。
+
 ## 0.24.1
 
 - 漏斗增加使用Minecraft箱子的替代配方：5个铁锭＋1个Minecraft箱子，在Minecraft工作台旁合成1个漏斗。

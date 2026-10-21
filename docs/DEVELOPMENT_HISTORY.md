@@ -1,3 +1,5 @@
+> 本文保留历史版本原名及当时路径。自 v0.24.2 起，当前源码目录为 `MineTerraria/`；内部存档标识仍为 `DimensionalTerraria`。
+
 # Dimensional Terraria
 
 在真实 Terraria / tModLoader 中实现二维与三维切换的单人模组原型，包含 Minecraft 风格人物、羊、生成蛋、剑及金属／宝石压缩方块。

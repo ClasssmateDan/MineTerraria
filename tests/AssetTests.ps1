@@ -42,15 +42,15 @@ public sealed class SpriteAssetReader : IDisposable {
 '@
 }
 foreach ($steveArmorPart in @('Head','Body','Legs')) {
-    [SpriteAssetReader]::ValidateOverlay((Join-Path $assetRoot 'DimensionalTerraria/Textures/Steve.png'),
-        (Join-Path $assetRoot "DimensionalTerraria/Textures/Equipment/SteveArmor_$steveArmorPart.png"))
+    [SpriteAssetReader]::ValidateOverlay((Join-Path $assetRoot 'MineTerraria/Textures/Steve.png'),
+        (Join-Path $assetRoot "MineTerraria/Textures/Equipment/SteveArmor_$steveArmorPart.png"))
     Write-Output "PASS Steve armor overlay: $steveArmorPart, eight aligned poses, original body silhouette and alpha retained"
 }
 $assetLogic = [Reflection.Assembly]::LoadFrom((Join-Path $assetRoot 'tests\SpatialTests\bin\Release\net8.0\SpatialTests.dll'))
 $assetSlice = $assetLogic.GetType('DimensionalTerraria.Core.SpriteSheetLayout').GetMethod('Slice')
 $assetTryFrame = $assetLogic.GetType('DimensionalTerraria.Core.SpriteSheetLayout').GetMethod('TryFrame')
 foreach ($assetName in @('Steve', 'Sheep', 'IronGolem', 'Villager', 'HigherDimensionalProjection')) {
-    $assetReader = [SpriteAssetReader]::new((Join-Path $assetRoot "DimensionalTerraria\Textures\$assetName.png"))
+    $assetReader = [SpriteAssetReader]::new((Join-Path $assetRoot "MineTerraria\Textures\$assetName.png"))
     try {
         $assetColumns = if ($assetName -eq 'HigherDimensionalProjection') { 1 } else { 4 }
         $assetRows = if ($assetColumns -eq 1) { 1 } else { 2 }
@@ -70,7 +70,7 @@ foreach ($assetName in @('Steve', 'Sheep', 'IronGolem', 'Villager', 'HigherDimen
     }
     finally { $assetReader.Dispose() }
 }
-$mcAssetDirectory = Join-Path $assetRoot 'DimensionalTerraria\Textures\Minecraft'
+$mcAssetDirectory = Join-Path $assetRoot 'MineTerraria\Textures\Minecraft'
 $mcClientZipPath = Join-Path $assetRoot '.dev\minecraft-1.21.1\client.jar'
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 $mcZip = if (Test-Path -LiteralPath $mcClientZipPath) { [IO.Compression.ZipFile]::OpenRead($mcClientZipPath) } else { $null }
@@ -117,7 +117,7 @@ try {
     }
 } finally { if ($null -ne $mcZip) { $mcZip.Dispose() } }
 foreach ($equip in @(@('HigherDimensionalHelmet_Head',40,1120),@('HigherDimensionalChestplate_Body',360,224),@('HigherDimensionalLeggings_Legs',40,1120),@('HigherDimensionalPickaxe',32,32),@('HigherDimensionalHelmet',32,32),@('HigherDimensionalChestplate',32,32),@('HigherDimensionalLeggings',32,32))) {
-    $equipReader = [SpriteAssetReader]::new((Join-Path $assetRoot "DimensionalTerraria/Textures/Equipment/$($equip[0]).png"))
+    $equipReader = [SpriteAssetReader]::new((Join-Path $assetRoot "MineTerraria/Textures/Equipment/$($equip[0]).png"))
     try {
         if ($equipReader.Width -ne $equip[1] -or $equipReader.Height -ne $equip[2]) { throw "Invalid native equipment layout: $($equip[0])" }
         $equipPixels = $equipReader.Pixels()

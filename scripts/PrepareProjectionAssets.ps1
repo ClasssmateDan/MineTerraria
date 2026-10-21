@@ -61,8 +61,8 @@ using System.Drawing.Imaging;
 using System.IO;
 public static class NetheriteArmorBuilder {
     public static void Build(string root) {
-        string mc = Path.Combine(root, "DimensionalTerraria/Textures/Minecraft");
-        string output = Path.Combine(root, "DimensionalTerraria/Textures/Equipment");
+        string mc = Path.Combine(root, "MineTerraria/Textures/Minecraft");
+        string output = Path.Combine(root, "MineTerraria/Textures/Equipment");
         Directory.CreateDirectory(output);
         using var layer1 = new Bitmap(Path.Combine(mc, "netherite_layer_1.png"));
         using var layer2 = new Bitmap(Path.Combine(mc, "netherite_layer_2.png"));
@@ -122,7 +122,7 @@ public static class NetheriteArmorBuilder {
     }
     private static Color Helmet(Bitmap armor,float u,float v) => u<0.72f ? Sample(armor,0,8,8,8,u/0.72f,v) : Sample(armor,8,8,8,8,(u-0.72f)/0.28f,v);
     private static void BuildSteve(string root,string output,Bitmap armor,Bitmap pants) {
-        using var steve=new Bitmap(Path.Combine(root,"DimensionalTerraria/Textures/Steve.png"));
+        using var steve=new Bitmap(Path.Combine(root,"MineTerraria/Textures/Steve.png"));
         using var head=new Bitmap(steve.Width,steve.Height);
         using var body=new Bitmap(steve.Width,steve.Height);
         using var legs=new Bitmap(steve.Width,steve.Height);

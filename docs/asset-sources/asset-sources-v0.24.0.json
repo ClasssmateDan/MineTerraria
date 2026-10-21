@@ -5,9 +5,10 @@
   "clientSha1": "30c73b1c5da787909b2f73340419fdf13b9def88",
   "files": [
     {
-      "file": "DimensionalTerraria/Textures/Minecraft/netherite_ingot.png",
+      "file": "MineTerraria/Textures/Minecraft/netherite_ingot.png",
       "archiveEntry": "assets/minecraft/textures/item/netherite_ingot.png",
       "sha256": "21418E66CA43961E91FB8CFBA645A4364CA340426BCA82F073D140F202DFE28B"
     }
-  ]
+  ],
+  "sourcePathNote": "Repository paths rebased to MineTerraria/ in v0.24.2; original asset bytes and hashes are unchanged."
 }

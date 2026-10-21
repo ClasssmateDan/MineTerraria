@@ -5,12 +5,13 @@
   "clientSha1": "30c73b1c5da787909b2f73340419fdf13b9def88",
   "files": [
     {
-      "file": "DimensionalTerraria/Textures/Minecraft/chest_normal.png",
+      "file": "MineTerraria/Textures/Minecraft/chest_normal.png",
       "archiveEntry": "assets/minecraft/textures/entity/chest/normal.png",
       "width": 64,
       "height": 64,
       "sha256": "8603C2A1B21497835EDA0B48C4D6271F5AE179E9407724B4C340053B8FD5E1E3"
     }
   ],
-  "derived": "Core/ChestArt.cs: native 36x38 chest atlas and 24x24 cube icon. Core/ContentPixelArt.cs: 16x24 villager egg. Rendering/CrouchPoseLayer.cs: render-time body pose, no new character PNG."
+  "derived": "Core/ChestArt.cs: native 36x38 chest atlas and 24x24 cube icon. Core/ContentPixelArt.cs: 16x24 villager egg. Rendering/CrouchPoseLayer.cs: render-time body pose, no new character PNG.",
+  "sourcePathNote": "Repository paths rebased to MineTerraria/ in v0.24.2; original asset bytes and hashes are unchanged."
 }

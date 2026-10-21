@@ -1,5 +1,5 @@
 displayName = MineTerraria
 author = Dan
-version = 0.24.1
+version = 0.24.2
 side = Both
 buildIgnore = bin/*, obj/*, *.csproj, *.user

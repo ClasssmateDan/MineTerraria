@@ -5,21 +5,22 @@
   "textures": [
     {
       "name": "observer_back",
-      "path": "DimensionalTerraria/Textures/Minecraft/observer_back.png",
+      "path": "MineTerraria/Textures/Minecraft/observer_back.png",
       "archiveEntry": "assets/minecraft/textures/block/observer_back.png",
       "sha256": "E8415EC6FC78C54C08898472DD5C56ECB6BE8BB2A16050A2135A2A4EC02070C4"
     },
     {
       "name": "observer_back_on",
-      "path": "DimensionalTerraria/Textures/Minecraft/observer_back_on.png",
+      "path": "MineTerraria/Textures/Minecraft/observer_back_on.png",
       "archiveEntry": "assets/minecraft/textures/block/observer_back_on.png",
       "sha256": "CCCA244120C3A7CF79C343996B1335219E4B42FC55A891245660DAC3E075ABB3"
     },
     {
       "name": "observer_side",
-      "path": "DimensionalTerraria/Textures/Minecraft/observer_side.png",
+      "path": "MineTerraria/Textures/Minecraft/observer_side.png",
       "archiveEntry": "assets/minecraft/textures/block/observer_side.png",
       "sha256": "2FBFD95EBA0E9171E8771371B83777C740C1F6EEA2AF154CCCA3AB5AFA0AA0E8"
     }
-  ]
+  ],
+  "sourcePathNote": "Repository paths rebased to MineTerraria/ in v0.24.2; original asset bytes and hashes are unchanged."
 }

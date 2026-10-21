@@ -15,7 +15,7 @@ Invoke-BuildEnvironment {
     Assert-NativeSuccess 'Localization restore'
     dotnet build $taskLocalizationProject --no-restore --configuration Release -p:UseAppHost=false --verbosity quiet
     Assert-NativeSuccess 'Localization build'
-    dotnet (Join-Path $script:Workspace 'tests\LocalizationTests\bin\Release\net8.0\LocalizationTests.dll') (Join-Path $script:Workspace 'DimensionalTerraria\Localization')
+    dotnet (Join-Path $script:Workspace 'tests\LocalizationTests\bin\Release\net8.0\LocalizationTests.dll') (Join-Path $script:Workspace 'MineTerraria\Localization')
     Assert-NativeSuccess 'Localization syntax'
 }
 & (Join-Path $script:Workspace 'tests\AssetTests.ps1')
