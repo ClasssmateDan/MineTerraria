@@ -1,0 +1,31 @@
+{
+  "version": "Minecraft Java 1.21.1",
+  "clientUrl": "https://piston-data.mojang.com/v1/objects/30c73b1c5da787909b2f73340419fdf13b9def88/client.jar",
+  "clientSha1": "30c73b1c5da787909b2f73340419fdf13b9def88",
+  "textures": [
+    {
+      "name": "hopper",
+      "path": "DimensionalTerraria/Textures/Minecraft/hopper.png",
+      "archiveEntry": "assets/minecraft/textures/item/hopper.png",
+      "sha256": "2A64B02C225BACC39B1D2F7FE8745805A652F16DFB10AD20800B69FAFA410900"
+    },
+    {
+      "name": "hopper_top",
+      "path": "DimensionalTerraria/Textures/Minecraft/hopper_top.png",
+      "archiveEntry": "assets/minecraft/textures/block/hopper_top.png",
+      "sha256": "B6BB8D17E0FE5FC1DDCF8A9F4584D3844015629062876243850A079D506A243A"
+    },
+    {
+      "name": "hopper_inside",
+      "path": "DimensionalTerraria/Textures/Minecraft/hopper_inside.png",
+      "archiveEntry": "assets/minecraft/textures/block/hopper_inside.png",
+      "sha256": "A7E398C824F90FCB3B05B952A585FCAFFC6272B5C90E43891D1E22164994C9D3"
+    },
+    {
+      "name": "hopper_outside",
+      "path": "DimensionalTerraria/Textures/Minecraft/hopper_outside.png",
+      "archiveEntry": "assets/minecraft/textures/block/hopper_outside.png",
+      "sha256": "0EB22F306E0C62FD704326F835E9A70B8AC6D88217C7A8D4E1DE45E6AC2494EF"
+    }
+  ]
+}

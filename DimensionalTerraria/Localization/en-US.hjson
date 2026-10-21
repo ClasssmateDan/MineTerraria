@@ -1,0 +1,482 @@
+Mods: {
+	DimensionalTerraria: {
+		Configs: {
+			DimensionConfig: {
+				DisplayName: MineTerraria Settings
+
+				EnableExplorationFog: {
+					Label: Enable 3D exploration fog
+					Tooltip: Only shows explored terrain and prevents returning to unexplored positions.
+				}
+
+				ShowCreatures: {
+					Label: Show creature sprites in 3D
+					Tooltip: Shows creatures in 3D.
+				}
+
+				Enable3DMining: {
+					Label: Enable 3D mining
+					Tooltip: Allows mining and harvesting in 3D.
+				}
+
+				Enable3DCombat: {
+					Label: Enable 3D weapon attacks
+					Tooltip: Allows weapon attacks in 3D.
+				}
+
+				Enable3DPlacement: {
+					Label: Enable 3D placement
+					Tooltip: Allows placing blocks and furniture in 3D.
+				}
+
+				Enable3DPickup: {
+					Label: Enable 3D pickup
+					Tooltip: Automatically picks up nearby drops in 3D.
+				}
+
+				PickupRadius: {
+					Label: 3D pickup radius
+					Tooltip: Automatic pickup distance in tiles. Defaults to 6, adjustable from 2 to 12. Uses your flying body's actual distance, including depth away from the map.
+				}
+
+				EntryDistance: {
+					Label: 3D entry distance
+					Tooltip: Distance from the 2D world on entry, in tiles. Defaults to 32 tiles.
+				}
+
+				EnemyNoticeRange: {
+					Label: Enemy rediscovery distance
+					Tooltip: Distance at which enemies notice the player, in tiles.
+				}
+
+				EnemyLoseRange: {
+					Label: Enemy disengagement distance
+					Tooltip: Enemies lose their target beyond this distance, in tiles.
+				}
+
+				MouseSensitivity: {
+					Label: Mouse sensitivity
+					Tooltip: Drag the slider to adjust 3D camera speed in degrees per pixel. Defaults to 0.06; ranges from 0.01 to 0.30. Lower values turn more slowly. Saved custom values are preserved.
+				}
+
+				FieldOfView: {
+					Label: First-person field of view
+					Tooltip: Vertical camera field of view in degrees.
+				}
+
+				RenderDistance: {
+					Label: 3D render distance
+					Tooltip: Radius in 24-tile chunks. Larger values use more memory.
+				}
+
+				FlightSpeed: {
+					Label: Flight speed
+					Tooltip: Base flight speed. Hold Ctrl to boost.
+				}
+
+				SmoothEdges: {
+					Label: Edge antialiasing
+					Tooltip: Use 4x MSAA for geometry edges while keeping the original pixel textures.
+				}
+
+				ShowLandingOutline: {
+					Label: Show the return outline
+					Tooltip: Draw the green or red character projection on the world plane.
+				}
+
+				EnableSwitching: {
+					Label: Enable dimension switching
+					Tooltip: Allow entering 3D flight in single-player.
+				}
+
+			}
+
+
+			ItemCatalogConfig: {
+				DisplayName: Item catalog
+
+				Items: {
+					Label: Items from this mod
+					Tooltip: ""
+				}
+			}
+
+			VanillaItemCatalogConfig: {
+				DisplayName: Vanilla Item Catalog
+
+				Items: {
+					Label: All vanilla items
+					Tooltip: Search by localized name, internal English name or item ID, then click an icon to receive it. 30 items per page; grants require a single-player world.
+				}
+			}
+		}
+
+		Keybinds: {
+			OpenBackpack.DisplayName: Open 3D backpack
+			ToggleDimension.DisplayName: Switch 2D / 3D
+			ReturnToAnchor.DisplayName: Return to departure point
+		}
+
+		Items: {
+			NetheriteIngot: {
+				DisplayName: Netherite Ingot
+				Tooltip: Used to craft Higher Dimensional Projection equipment
+			}
+			Firework: {
+				DisplayName: Firework
+				Tooltip:
+					'''
+					Propels you toward the mouse
+					Hold right mouse in 3D to boost toward the crosshair
+					'''
+			}
+			MinecraftChest: {
+				DisplayName: Minecraft Chest
+				Tooltip:
+					'''
+					Right-click to open
+					Empty the chest before breaking it
+					'''
+			}
+			VillagerSpawnEgg: {
+				DisplayName: Villager Spawn Egg
+				Tooltip:
+					'''
+					Spawns a villager on the ground
+					Right-click aimed ground in 3D
+					'''
+			}
+			Bedrock: {
+				DisplayName: Bedrock
+				Tooltip: Can only be broken in 3D with the Higher Dimensional Projection Pickaxe
+			}
+			HigherDimensionalPickaxe: {
+				DisplayName: Higher Dimensional Projection Pickaxe
+				Tooltip: Can break bedrock in 3D
+			}
+			HigherDimensionalHelmet: {
+				DisplayName: Higher Dimensional Projection Helmet
+				Tooltip: Complete the set for passive protection
+				SetBonus: Immunity to lava, fire blocks, falling, knockback and common debuffs
+			}
+			HigherDimensionalChestplate: {
+				DisplayName: Higher Dimensional Projection Chestplate
+				Tooltip: Complete the set for passive protection
+			}
+			HigherDimensionalLeggings: {
+				DisplayName: Higher Dimensional Projection Leggings
+				Tooltip: Complete the set for passive protection
+			}
+			Hopper: {
+				DisplayName: Hopper
+				Tooltip:
+					'''
+					Collects drops in the tile directly above into the chest below
+					Does not extract from a chest above
+					'''
+			}
+			Redstone: {
+				DisplayName: Redstone
+				Tooltip: Redstone crafting material
+			}
+			RedstoneBlock: {
+				DisplayName: Redstone Block
+				Tooltip: Powers adjacent tiles in all four directions
+			}
+			RedstonePulser: {
+				DisplayName: Redstone Pulser
+				Tooltip:
+					'''
+					Pulses in all four directions, switching every half second
+					Right-click to invert the signal
+					'''
+			}
+			Piston: {
+				DisplayName: Piston
+				Tooltip:
+					'''
+					Extends when powered, pushing up to 12 tiles
+					Right-click while retracted to rotate
+					'''
+			}
+			StickyPiston: {
+				DisplayName: Sticky Piston
+				Tooltip:
+					'''
+					Pulls one tile back when retracting
+					Right-click while retracted to rotate
+					'''
+			}
+			OakBoat: {
+				DisplayName: Oak Boat
+				Tooltip:
+					'''
+					Use on ground or liquid; right-click in 3D
+					Traps passing creatures; breaks when attacked
+					Releases a boss before the passenger takes damage
+					'''
+			}
+			OakPlanks: {
+				DisplayName: Oak Planks
+				Tooltip: Building material
+			}
+			MinecraftCraftingTable: {
+				DisplayName: Minecraft Crafting Table
+				Tooltip: Stand nearby to craft Minecraft items
+			}
+			PrefabIronGolem: {
+				DisplayName: Prefabricated Iron Golem
+				Tooltip:
+					'''
+					Spawns an iron golem on the ground
+					Right-click aimed ground in 3D
+					'''
+			}
+			CopperStorageBlock: {
+				DisplayName: Copper Block
+				Tooltip: ""
+			}
+
+			TinStorageBlock: {
+				DisplayName: Tin Block
+				Tooltip: ""
+			}
+
+			IronStorageBlock: {
+				DisplayName: Iron Block
+				Tooltip: Build a T from four blocks and place a pumpkin on top to summon an iron golem
+			}
+
+			LeadStorageBlock: {
+				DisplayName: Lead Block
+				Tooltip: ""
+			}
+
+			SilverStorageBlock: {
+				DisplayName: Silver Block
+				Tooltip: ""
+			}
+
+			TungstenStorageBlock: {
+				DisplayName: Tungsten Block
+				Tooltip: ""
+			}
+
+			GoldStorageBlock: {
+				DisplayName: Gold Block
+				Tooltip: ""
+			}
+
+			PlatinumStorageBlock: {
+				DisplayName: Platinum Block
+				Tooltip: ""
+			}
+
+			DemoniteStorageBlock: {
+				DisplayName: Demonite Block
+				Tooltip: ""
+			}
+
+			CrimtaneStorageBlock: {
+				DisplayName: Crimtane Block
+				Tooltip: ""
+			}
+
+			MeteoriteStorageBlock: {
+				DisplayName: Meteorite Block
+				Tooltip: ""
+			}
+
+			HellstoneStorageBlock: {
+				DisplayName: Hellstone Block
+				Tooltip: ""
+			}
+
+			CobaltStorageBlock: {
+				DisplayName: Cobalt Block
+				Tooltip: ""
+			}
+
+			PalladiumStorageBlock: {
+				DisplayName: Palladium Block
+				Tooltip: ""
+			}
+
+			MythrilStorageBlock: {
+				DisplayName: Mythril Block
+				Tooltip: ""
+			}
+
+			OrichalcumStorageBlock: {
+				DisplayName: Orichalcum Block
+				Tooltip: ""
+			}
+
+			AdamantiteStorageBlock: {
+				DisplayName: Adamantite Block
+				Tooltip: ""
+			}
+
+			TitaniumStorageBlock: {
+				DisplayName: Titanium Block
+				Tooltip: ""
+			}
+
+			ChlorophyteStorageBlock: {
+				DisplayName: Chlorophyte Block
+				Tooltip: ""
+			}
+
+			LuminiteStorageBlock: {
+				DisplayName: Luminite Block
+				Tooltip: ""
+			}
+
+			AmethystStorageBlock: {
+				DisplayName: Amethyst Block
+				Tooltip: ""
+			}
+
+			TopazStorageBlock: {
+				DisplayName: Topaz Block
+				Tooltip: ""
+			}
+
+			SapphireStorageBlock: {
+				DisplayName: Sapphire Block
+				Tooltip: ""
+			}
+
+			EmeraldStorageBlock: {
+				DisplayName: Emerald Block
+				Tooltip: ""
+			}
+
+			RubyStorageBlock: {
+				DisplayName: Ruby Block
+				Tooltip: ""
+			}
+
+			DiamondStorageBlock: {
+				DisplayName: Diamond Block
+				Tooltip: ""
+			}
+
+			AmberStorageBlock: {
+				DisplayName: Amber Block
+				Tooltip: ""
+			}
+
+			SheepSpawnEgg: {
+				DisplayName: Sheep Spawn Egg
+				Tooltip:
+					'''
+					Spawns a sheep on the ground
+					Right-click aimed ground in 3D
+					'''
+			}
+
+			SlimeSpawnEgg: {
+				DisplayName: Slime Spawn Egg
+				Tooltip:
+					'''
+					Spawns a blue slime on the ground
+					Right-click aimed ground in 3D
+					'''
+			}
+
+			HigherDimensionalProjection: {
+				DisplayName: High-Dimensional Projection Sword
+				Tooltip: Base damage increases to 999 in 3D
+			}
+
+			DebugBlaster: {
+				DisplayName: Debug Blaster
+				Tooltip: Does not consume ammunition
+			}
+		}
+
+		NPCs: {
+			DebugTargetDummy.DisplayName: Debug Target Dummy
+			MinecraftSheep.DisplayName: Sheep
+			MinecraftIronGolem.DisplayName: Iron Golem
+			MinecraftVillager.DisplayName: Villager
+		}
+
+		Character.NewSteve: New Steve character
+		Recipes.AnyTerrariaWood: Any Terraria wood
+
+		Catalog: {
+			InGameOnly: Enter a single-player world first
+			Hint: Click an icon for 1 item; Shift-click for up to 64
+			Ready: Items can be claimed in a single-player world
+			Granted: Received {0} x{1}
+			Full: Inventory is full; no items granted
+			Unavailable: This item is currently unavailable
+			SearchHint: Search: name / internal name / ID
+			Clear: Clear
+			Previous: Prev
+			Next: Next
+			Page: "{0} items · {1}/{2}"
+			NoResults: No matching items
+		}
+
+
+		GolemSummoning: {
+			Summoned: The iron blocks and pumpkin became an Iron Golem!
+			NoSpace: "Cannot summon: needs about 3 tiles of width and 5 of dry height. Clear above the pumpkin and beside the T, then replace the top pumpkin. Materials preserved."
+			Protected: "Cannot summon: a structure block is protected from removal. Materials preserved."
+			NoNpcSlot: "Cannot summon: no free NPC slot. Materials preserved; replace the top pumpkin later."
+		}
+
+		Messages: {
+			Disabled: Dimension switching is disabled in this mod's configuration.
+			CloseMenus: Close settings and other menus before switching dimensions.
+			SinglePlayerOnly: Dimension switching is currently available in single-player only.
+			CannotEnter: Stand in open, dry space. Dismount and release hooks before entering 3D.
+			ReturnOutOfWorld: The return position is outside the playable world.
+			ReturnUnexplored: This position has not been explored in 2D. Move to explored space or use your departure-point key to recover.
+			ReturnObstructed: Your full character must fit at the return position. Move the green outline into open space.
+			ReturnLiquid: Returning into liquids is disabled in this prototype.
+			RecoveryBlocked: No safe explored position is available near departure. Fly to another open, dry, explored position and use the dimension key to return.
+			RenderFailed: 3D rendering failed. Recovered to a safe position near departure; details are in client.log.
+		}
+
+		FirstPerson: {
+			EggTarget: Right-click to use a sheep egg on this ground
+			SlimeEggTarget: Right-click to use a slime egg on this ground
+			VillagerEggTarget: Right-click to use a villager egg on this ground
+			PlaceTarget: Hold right mouse to place · 6-tile reach
+			PlaceBlocked: Cannot place · Find explored, visible, supported space within 6 tiles
+			BoatTarget: Right-click to place an Oak Boat on ground or liquid
+			GolemTarget: Right-click to use the prefabricated golem on this ground
+			EggNoSpace: Choose ground with enough space above it
+			InventoryFull: Place the cursor item first; inventory is full
+			MineTarget: Hold left mouse to mine
+			ShotTarget: Hold left mouse to shoot; block damage requires 3D mining enabled
+			ShotBlockHit: Shot hit terrain
+			ShotBlockBroken: Shot broke a block
+			NeedTool: Select a tool that can mine or harvest this target
+			TargetUnexplored: Cannot interact with an unexplored area
+			NoAmmo: No suitable ammunition
+			NoMana: Not enough mana; wait for it to recover
+			CannotAttack: Cannot use a weapon in the current state
+			UnsupportedWeapon: This weapon is not yet adapted for 3D attacks
+			ReturnReady: "[{0}] return to 2D"
+			ReturnBlocked: Cannot return here. Move to open, dry space.
+			ReturnUnexplored: Exploration fog: this position is unexplored. Cannot return to 2D here.
+			Inventory: Inventory
+			InventoryHint: E / Esc close · Left click move / stack · Right click split · Numbers select hotbar
+			Pause: Game menu
+			Resume: Resume 3D flight
+			ReturnHere: Return to 2D here
+			ReturnStart: Return to departure point
+		}
+
+		Hud: {
+			Title: 3D FLIGHT  |  World simulation running
+			ReturnReady: GREEN: your character fits here; you can return to 2D.
+			ReturnBlocked: RED: blocked or wet; move to an open return position.
+		}
+	}
+}

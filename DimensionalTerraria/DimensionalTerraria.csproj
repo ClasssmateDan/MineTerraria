@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>12.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <AssemblyName>DimensionalTerraria</AssemblyName>
+    <TmlDirectory Condition="'$(TmlDirectory)' == ''">$(MSBuildThisFileDirectory)..\.dev\tModLoader</TmlDirectory>
+  </PropertyGroup>
+  <Import Project="$(TmlDirectory)\tMLMod.targets" Condition="Exists('$(TmlDirectory)\tMLMod.targets')" />
+  <Target Name="CheckTmodLoader" BeforeTargets="PrepareForBuild" Condition="!Exists('$(TmlDirectory)\tMLMod.targets')">
+    <Error Text="tModLoader was not found. Run scripts/Setup.ps1 or specify -p:TmlDirectory=YOUR_TMODLOADER_DIRECTORY." />
+  </Target>
+</Project>

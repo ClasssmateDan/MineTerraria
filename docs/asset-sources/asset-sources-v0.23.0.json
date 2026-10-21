@@ -1,0 +1,13 @@
+{
+  "version": "0.23.0",
+  "source": "Minecraft Java 1.21.1 official client",
+  "url": "https://piston-data.mojang.com/v1/objects/30c73b1c5da787909b2f73340419fdf13b9def88/client.jar",
+  "clientSha1": "30c73b1c5da787909b2f73340419fdf13b9def88",
+  "files": [
+    {
+      "file": "DimensionalTerraria/Textures/Minecraft/firework_rocket.png",
+      "archiveEntry": "assets/minecraft/textures/item/firework_rocket.png",
+      "sha256": "FEA5F8FDF3A1517EDBC7006D327FE09B8567A0E4C2E76F8AEB8AEAC68EABF786"
+    }
+  ]
+}

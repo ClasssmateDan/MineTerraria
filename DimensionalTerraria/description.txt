@@ -1,0 +1,6 @@
+MineTerraria 将 Minecraft 方块、生物与合成带入 Terraria，并允许玩家飞出二维地图，以第一人称在三维中飞行、挖掘、建造和战斗。
+包含 Steve 独立角色外观、羊与村民、铁傀儡、船、箱子、漏斗、红石与活塞，以及下界合金和高维投影装备。按 V 切换维度，B 返回出发点，E 打开三维背包；按键可在控制设置中调整。
+木板与 Minecraft 工作台可徒手制作，其余本模组配方需要 Minecraft 工作台。设置保留可搜索、可领取物品的两个图鉴。
+支持单人游戏。三维期间世界继续运行，Boss 留场等待，返回二维后恢复其 AI；部分特殊武器与绘制仍在适配中。原内部标识 DimensionalTerraria 保持不变，可沿用原存档。
+
+MineTerraria combines Minecraft-inspired content with Terraria and adds first-person flight outside the 2D world. Includes crafting, Netherite projection equipment, creatures, boats, storage and redstone machines. V switches dimensions, B returns to departure and E opens the 3D inventory. Single-player; internal mod identity remains DimensionalTerraria for save compatibility.

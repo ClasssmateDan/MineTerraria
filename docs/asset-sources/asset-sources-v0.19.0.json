@@ -1,0 +1,79 @@
+{
+  "version": "0.19.0",
+  "source": "Minecraft Java 1.21.1 official client",
+  "url": "https://piston-data.mojang.com/v1/objects/30c73b1c5da787909b2f73340419fdf13b9def88/client.jar",
+  "clientSha1": "30c73b1c5da787909b2f73340419fdf13b9def88",
+  "files": [
+    {
+      "file": "DimensionalTerraria/Textures/Minecraft/bedrock.png",
+      "archiveEntry": "assets/minecraft/textures/block/bedrock.png",
+      "sha256": "52F57443F329E53404C73C697FFD75770F1E2ABF935A28315621FB0CA94B7571"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Minecraft/netherite_pickaxe.png",
+      "archiveEntry": "assets/minecraft/textures/item/netherite_pickaxe.png",
+      "sha256": "41C9AD71BAA4C2CCFA3FB983FE415526FCCE173E53D13D9B8956B8DA0E7B371E"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Minecraft/netherite_helmet.png",
+      "archiveEntry": "assets/minecraft/textures/item/netherite_helmet.png",
+      "sha256": "79117A0656E4CD53950AD25AAA073991DB83E65BE3363DE5C1F899B959912D61"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Minecraft/netherite_chestplate.png",
+      "archiveEntry": "assets/minecraft/textures/item/netherite_chestplate.png",
+      "sha256": "2A8BE1D0598D7E9E0F26340DFB8DF695E47E9BDBBA65B13970F17B45C29F7160"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Minecraft/netherite_leggings.png",
+      "archiveEntry": "assets/minecraft/textures/item/netherite_leggings.png",
+      "sha256": "1F34156DB7767C3DECA47832B285C5C07D83088BB163D6F8F5D2DFC7D9C94A5F"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Minecraft/netherite_boots.png",
+      "archiveEntry": "assets/minecraft/textures/item/netherite_boots.png",
+      "sha256": "165F358064A52C31BCCC0D60475F58ED9E07E8CC8F8E6D7476D605A743C87869"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Minecraft/netherite_layer_1.png",
+      "archiveEntry": "assets/minecraft/textures/models/armor/netherite_layer_1.png",
+      "sha256": "118EC4EA6F7ADF31B962EF92CF851E4D569C37120EACD114E5282647139147D5"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Minecraft/netherite_layer_2.png",
+      "archiveEntry": "assets/minecraft/textures/models/armor/netherite_layer_2.png",
+      "sha256": "49B55A02EAE5DEE8C182F52B84060705B72A5FAE3E3C624FBBD19B0225510407"
+    }
+  ],
+  "derived": [
+    {
+      "file": "DimensionalTerraria/Textures/Equipment/HigherDimensionalChestplate_Body.png",
+      "sha256": "373E028A44A3999CF57B55CEE41142C80225A26580D03D841E688DD4ACB3FE84"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Equipment/HigherDimensionalChestplate.png",
+      "sha256": "6FAB5E2901D4DEFE6A2DD6D96914732A3E15B0FE06F5776A0B619522339ADFA4"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Equipment/HigherDimensionalHelmet_Head.png",
+      "sha256": "D7877D5BCD8FFE1C0E06004818919308A511C803B85775433BAE3EA91D349670"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Equipment/HigherDimensionalHelmet.png",
+      "sha256": "B024DDC9DA43C69F9CBAEA36A0F4A8AF6E5803A25FA4B9B1E1A5E76730EFE5FE"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Equipment/HigherDimensionalLeggings_Legs.png",
+      "sha256": "E38FADB5C62AA141A4A678AE356C16373212A04547C81B34AABE3A09761F4F63"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Equipment/HigherDimensionalLeggings.png",
+      "sha256": "1BD10934237BBADEA9BD65C177C753CE83A643EC33B5E8AE32D82FF14D3946AA"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Equipment/HigherDimensionalPickaxe.png",
+      "sha256": "4ABD34067AB46DD0F4C6AD668563CB73B63C3E0B11792E9AF6703AF27ACD739D"
+    }
+  ],
+  "derivation": "scripts/PrepareProjectionAssets.ps1: nearest-neighbor item icons; original Netherite armor UV colors mapped to native Terraria Copper armor alpha/animation layout; source Content/Images/Armor_Head_1.xnb, Armor/Armor_1.xnb, Armor_Legs_1.xnb from local Terraria 1.4.4.9."
+}

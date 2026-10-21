@@ -1,0 +1,50 @@
+{
+  "version": "0.19.1",
+  "source": "Original Minecraft Java 1.21.1 Netherite UV textures retained from v0.19.0; existing Steve atlas",
+  "previousSource": "asset-sources-v0.19.0.json",
+  "baseSteveSha256": "9BF22B8C96ECC77FF8721F352344689D9354E77D38570751A295DEE77973763A",
+  "builder": "scripts/PrepareProjectionAssets.ps1",
+  "derivation": "Source-aligned independent armor overlays for eight Steve poses; head UV rectangle replaces Copper helmet silhouette; body, legs and original icons retained for ordinary characters",
+  "files": [
+    {
+      "file": "DimensionalTerraria/Textures/Equipment/HigherDimensionalChestplate_Body.png",
+      "sha256": "373E028A44A3999CF57B55CEE41142C80225A26580D03D841E688DD4ACB3FE84"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Equipment/HigherDimensionalChestplate.png",
+      "sha256": "6FAB5E2901D4DEFE6A2DD6D96914732A3E15B0FE06F5776A0B619522339ADFA4"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Equipment/HigherDimensionalHelmet_Head.png",
+      "sha256": "805E67C729C37C9433289070BEE39EE463296D569E5B36ED0B3143C4B04B1ED7"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Equipment/HigherDimensionalHelmet.png",
+      "sha256": "B024DDC9DA43C69F9CBAEA36A0F4A8AF6E5803A25FA4B9B1E1A5E76730EFE5FE"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Equipment/HigherDimensionalLeggings_Legs.png",
+      "sha256": "E38FADB5C62AA141A4A678AE356C16373212A04547C81B34AABE3A09761F4F63"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Equipment/HigherDimensionalLeggings.png",
+      "sha256": "1BD10934237BBADEA9BD65C177C753CE83A643EC33B5E8AE32D82FF14D3946AA"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Equipment/HigherDimensionalPickaxe.png",
+      "sha256": "4ABD34067AB46DD0F4C6AD668563CB73B63C3E0B11792E9AF6703AF27ACD739D"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Equipment/SteveArmor_Body.png",
+      "sha256": "6162E3FC33D82A24D4E595E3CDDB7746F3619DFD51158DC4955B5CF48959552A"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Equipment/SteveArmor_Head.png",
+      "sha256": "FB0DA2C9E3EFF68BC2B0763139F303061F4601199C7E10A1CF0C7EEB64413672"
+    },
+    {
+      "file": "DimensionalTerraria/Textures/Equipment/SteveArmor_Legs.png",
+      "sha256": "872CDD7AD583005683D63F33167F735A8FE301F347FA744FE248546F491EA995"
+    }
+  ]
+}

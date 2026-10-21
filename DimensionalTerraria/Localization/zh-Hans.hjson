@@ -1,0 +1,482 @@
+Mods: {
+	DimensionalTerraria: {
+		Configs: {
+			DimensionConfig: {
+				DisplayName: MineTerraria 设置
+
+				EnableExplorationFog: {
+					Label: 启用三维探索迷雾
+					Tooltip: 只显示已探索的地图区域，并禁止返回未探索位置。
+				}
+
+				ShowCreatures: {
+					Label: 显示三维生物精灵
+					Tooltip: 在三维模式下显示生物。
+				}
+
+				Enable3DMining: {
+					Label: 启用三维挖掘
+					Tooltip: 允许在三维模式下挖掘和采集。
+				}
+
+				Enable3DCombat: {
+					Label: 启用三维武器攻击
+					Tooltip: 允许在三维模式下使用武器攻击。
+				}
+
+				Enable3DPlacement: {
+					Label: 启用三维放置
+					Tooltip: 允许在三维模式下放置方块和家具。
+				}
+
+				Enable3DPickup: {
+					Label: 启用三维拾取
+					Tooltip: 允许在三维模式下自动拾取附近掉落物。
+				}
+
+				PickupRadius: {
+					Label: 三维拾取半径
+					Tooltip: 三维自动拾取的距离，以方块格数计算；默认6格，可调2至12格。以飞行身体计算真实距离，包含离开地图的纵深。
+				}
+
+				EntryDistance: {
+					Label: 进入三维的距离
+					Tooltip: 进入三维后与二维地图的距离，以方块格数计算；默认32格。
+				}
+
+				EnemyNoticeRange: {
+					Label: 敌怪重新发现距离
+					Tooltip: 敌怪发现玩家的距离，单位为格。
+				}
+
+				EnemyLoseRange: {
+					Label: 敌怪脱战距离
+					Tooltip: 敌怪超过此距离会丢失目标，单位为格。
+				}
+
+				MouseSensitivity: {
+					Label: 鼠标灵敏度
+					Tooltip: 拖动滑条调整三维镜头转速，每像素鼠标移动对应的角度；默认0.06，可调0.01至0.30。值越小转向越慢；已保存的自定义值会保留。
+				}
+
+				FieldOfView: {
+					Label: 第一人称视野角度
+					Tooltip: 调整三维相机的垂直视野。
+				}
+
+				RenderDistance: {
+					Label: 三维视距
+					Tooltip: 以24格区块为单位；增加视距会使用更多内存。
+				}
+
+				FlightSpeed: {
+					Label: 飞行速度
+					Tooltip: 三维飞行的基础速度；Ctrl加速。
+				}
+
+				SmoothEdges: {
+					Label: 边缘抗锯齿
+					Tooltip: 使用4倍多重采样平滑几何边缘，保留原版像素贴图。
+				}
+
+				ShowLandingOutline: {
+					Label: 显示返回位置轮廓
+					Tooltip: 在世界平面上绘制绿色或红色的角色投影框。
+				}
+
+				EnableSwitching: {
+					Label: 启用维度切换
+					Tooltip: 允许在单人游戏中进入三维飞行。
+				}
+
+			}
+
+
+			ItemCatalogConfig: {
+				DisplayName: 物品图鉴
+
+				Items: {
+					Label: 本模组物品
+					// Tooltip: ""
+				}
+			}
+
+			VanillaItemCatalogConfig: {
+				DisplayName: 原版物品图鉴
+
+				Items: {
+					Label: 全部原版物品
+					Tooltip: 按中文名、英文内部名或物品ID搜索，点击图标立即领取。每页30件；仅单人世界内可领取。
+				}
+			}
+		}
+
+		Keybinds: {
+			OpenBackpack.DisplayName: 打开三维背包
+			ToggleDimension.DisplayName: 切换二维／三维
+			ReturnToAnchor.DisplayName: 返回出发位置
+		}
+
+		Items: {
+			NetheriteIngot: {
+				DisplayName: 下界合金
+				Tooltip: 用于制作高维投影装备
+			}
+			Firework: {
+				DisplayName: 烟花
+				Tooltip:
+					'''
+					向鼠标方向推进
+					三维模式下按住右键，向准星方向推进
+					'''
+			}
+			MinecraftChest: {
+				DisplayName: Minecraft箱子
+				Tooltip:
+					'''
+					右键打开箱子
+					有物品时无法拆除
+					'''
+			}
+			VillagerSpawnEgg: {
+				DisplayName: 村民蛋
+				Tooltip:
+					'''
+					在地面生成一名村民
+					三维模式下对准地面按右键
+					'''
+			}
+			Bedrock: {
+				DisplayName: 基岩
+				Tooltip: 只能在三维模式下用高维投影镐拆除
+			}
+			HigherDimensionalPickaxe: {
+				DisplayName: 高维投影镐
+				Tooltip: 三维模式下可以拆除基岩
+			}
+			HigherDimensionalHelmet: {
+				DisplayName: 高维投影头盔
+				Tooltip: 集齐全套获得被动防护
+				SetBonus: 免疫岩浆、火块、跌落、击退和常见减益
+			}
+			HigherDimensionalChestplate: {
+				DisplayName: 高维投影胸甲
+				Tooltip: 集齐全套获得被动防护
+			}
+			HigherDimensionalLeggings: {
+				DisplayName: 高维投影护腿
+				Tooltip: 集齐全套获得被动防护
+			}
+			Hopper: {
+				DisplayName: 漏斗
+				Tooltip:
+					'''
+					收集正上方一格内的掉落物，送入下方的箱子
+					不从上方箱子中取物品
+					'''
+			}
+			Redstone: {
+				DisplayName: 红石
+				Tooltip: 红石合成材料
+			}
+			RedstoneBlock: {
+				DisplayName: 红石块
+				Tooltip: 为四个方向的相邻方块提供红石信号
+			}
+			RedstonePulser: {
+				DisplayName: 红石脉冲器
+				Tooltip:
+					'''
+					向四周输出红石脉冲，每半秒切换一次
+					右键反转信号
+					'''
+			}
+			Piston: {
+				DisplayName: 活塞
+				Tooltip:
+					'''
+					红石充能时伸出，最多推动12格方块
+					收回时右键旋转方向
+					'''
+			}
+			StickyPiston: {
+				DisplayName: 粘性活塞
+				Tooltip:
+					'''
+					收回时拉回前方一个方块
+					收回时右键旋转方向
+					'''
+			}
+			OakBoat: {
+				DisplayName: 橡木船
+				Tooltip:
+					'''
+					对地面或液面使用，三维模式下按右键
+					困住经过的生物；船受到攻击时破坏
+					承载的Boss受伤前会破船
+					'''
+			}
+			OakPlanks: {
+				DisplayName: 橡木板
+				Tooltip: 建筑材料
+			}
+			MinecraftCraftingTable: {
+				DisplayName: Minecraft工作台
+				Tooltip: 靠近以制作Minecraft物品
+			}
+			PrefabIronGolem: {
+				DisplayName: 预制铁傀儡
+				Tooltip:
+					'''
+					在地面生成一只铁傀儡
+					三维模式下对准地面按右键
+					'''
+			}
+			CopperStorageBlock: {
+				DisplayName: 铜块
+				Tooltip: ""
+			}
+
+			TinStorageBlock: {
+				DisplayName: 锡块
+				Tooltip: ""
+			}
+
+			IronStorageBlock: {
+				DisplayName: 铁块
+				Tooltip: 4个铁块摆成T形，顶部放置南瓜可召唤铁傀儡
+			}
+
+			LeadStorageBlock: {
+				DisplayName: 铅块
+				Tooltip: ""
+			}
+
+			SilverStorageBlock: {
+				DisplayName: 银块
+				Tooltip: ""
+			}
+
+			TungstenStorageBlock: {
+				DisplayName: 钨块
+				Tooltip: ""
+			}
+
+			GoldStorageBlock: {
+				DisplayName: 金块
+				Tooltip: ""
+			}
+
+			PlatinumStorageBlock: {
+				DisplayName: 铂金块
+				Tooltip: ""
+			}
+
+			DemoniteStorageBlock: {
+				DisplayName: 魔矿块
+				Tooltip: ""
+			}
+
+			CrimtaneStorageBlock: {
+				DisplayName: 猩红矿块
+				Tooltip: ""
+			}
+
+			MeteoriteStorageBlock: {
+				DisplayName: 陨石块
+				Tooltip: ""
+			}
+
+			HellstoneStorageBlock: {
+				DisplayName: 狱石块
+				Tooltip: ""
+			}
+
+			CobaltStorageBlock: {
+				DisplayName: 钴块
+				Tooltip: ""
+			}
+
+			PalladiumStorageBlock: {
+				DisplayName: 钯金块
+				Tooltip: ""
+			}
+
+			MythrilStorageBlock: {
+				DisplayName: 秘银块
+				Tooltip: ""
+			}
+
+			OrichalcumStorageBlock: {
+				DisplayName: 山铜块
+				Tooltip: ""
+			}
+
+			AdamantiteStorageBlock: {
+				DisplayName: 精金块
+				Tooltip: ""
+			}
+
+			TitaniumStorageBlock: {
+				DisplayName: 钛金块
+				Tooltip: ""
+			}
+
+			ChlorophyteStorageBlock: {
+				DisplayName: 叶绿块
+				Tooltip: ""
+			}
+
+			LuminiteStorageBlock: {
+				DisplayName: 夜明块
+				Tooltip: ""
+			}
+
+			AmethystStorageBlock: {
+				DisplayName: 紫晶块
+				Tooltip: ""
+			}
+
+			TopazStorageBlock: {
+				DisplayName: 黄玉块
+				Tooltip: ""
+			}
+
+			SapphireStorageBlock: {
+				DisplayName: 蓝玉块
+				Tooltip: ""
+			}
+
+			EmeraldStorageBlock: {
+				DisplayName: 翡翠块
+				Tooltip: ""
+			}
+
+			RubyStorageBlock: {
+				DisplayName: 红玉块
+				Tooltip: ""
+			}
+
+			DiamondStorageBlock: {
+				DisplayName: 钻石块
+				Tooltip: ""
+			}
+
+			AmberStorageBlock: {
+				DisplayName: 琥珀块
+				Tooltip: ""
+			}
+
+			SheepSpawnEgg: {
+				DisplayName: 羊生成蛋
+				Tooltip:
+					'''
+					在地面生成一只羊
+					三维模式下对准地面按右键
+					'''
+			}
+
+			SlimeSpawnEgg: {
+				DisplayName: 史莱姆蛋
+				Tooltip:
+					'''
+					在地面生成一只蓝史莱姆
+					三维模式下对准地面按右键
+					'''
+			}
+
+			HigherDimensionalProjection: {
+				DisplayName: 高维投影剑
+				Tooltip: 三维模式下基础伤害提升至999
+			}
+
+			DebugBlaster: {
+				DisplayName: 调试远程枪
+				Tooltip: 不消耗弹药
+			}
+		}
+
+		NPCs: {
+			DebugTargetDummy.DisplayName: 调试假人
+			MinecraftSheep.DisplayName: 羊
+			MinecraftIronGolem.DisplayName: 铁傀儡
+			MinecraftVillager.DisplayName: 村民
+		}
+
+		Character.NewSteve: 新建 Steve 角色
+		Recipes.AnyTerrariaWood: 任意泰拉瑞亚木材
+
+		Catalog: {
+			InGameOnly: 请先进入单人世界
+			Hint: 点击图标领取1个，Shift＋点击领取最多64个
+			Ready: 单人世界内可领取物品
+			Granted: 已领取 {0} ×{1}
+			Full: 背包已满，无法领取
+			Unavailable: 该物品当前不可领取
+			SearchHint: 搜索：中文名／英文内部名／ID
+			Clear: 清空
+			Previous: 上一页
+			Next: 下一页
+			Page: 共{0}件 · {1}／{2}页
+			NoResults: 未找到匹配物品
+		}
+
+
+		GolemSummoning: {
+			Summoned: 铁块与南瓜化为了铁傀儡！
+			NoSpace: 召唤失败：铁傀儡需要约3格宽、5格高的干燥空间，请清理南瓜上方和T型两侧；结构已保留，清理后重新放置顶部南瓜。
+			Protected: 召唤失败：结构中有受保护、不可移除的方块；结构已保留。
+			NoNpcSlot: 召唤失败：世界没有空闲生物槽位；结构已保留，稍后重新放置顶部南瓜。
+		}
+
+		Messages: {
+			Disabled: 维度切换已在模组配置中禁用。
+			CloseMenus: 请关闭设置或其他菜单后再切换维度。
+			SinglePlayerOnly: 当前版本只支持单人模式的维度切换。
+			CannotEnter: 请在无液体、身体不被遮挡的位置进入三维；先解除坐骑、抓钩等状态。
+			ReturnOutOfWorld: 返回位置超出可游戏的世界边界。
+			ReturnUnexplored: 此位置尚未在二维中探索，不能返回。请移动到已探索区域，或按返回出发位置的快捷键恢复。
+			ReturnObstructed: 返回位置放不下完整角色，请将落点框移到空旷处。
+			ReturnLiquid: 此原型暂不允许返回有液体的位置。
+			RecoveryBlocked: 出发点及附近已探索区域暂时没有安全落点；请移动到其他空旷、干燥的已探索位置，按切换维度键返回。
+			RenderFailed: 三维绘制失败，已恢复到出发点附近的安全位置；详细信息已写入 client.log。
+		}
+
+		FirstPerson: {
+			EggTarget: 右键使用羊蛋，在地面生成羊
+			SlimeEggTarget: 右键使用史莱姆蛋，在地面生成蓝史莱姆
+			VillagerEggTarget: 右键使用村民蛋，在地面生成村民
+			PlaceTarget: 按住右键放置 · 最远6格
+			PlaceBlocked: 无法放置 · 靠近6格内已探索、无遮挡且有支撑的空位
+			BoatTarget: 右键在地面或液面放置橡木船
+			GolemTarget: 右键使用预制铁傀儡，在地面生成铁傀儡
+			EggNoSpace: 请选择上方有足够空间的地面
+			InventoryFull: 请先放下鼠标上的物品，背包已满
+			MineTarget: 按住左键挖掘
+			ShotTarget: 按住左键射击；破坏方块还需开启三维挖掘
+			ShotBlockHit: 射击命中地形
+			ShotBlockBroken: 射击破坏方块
+			NeedTool: 请在快捷栏选择可挖掘或采集此目标的工具
+			TargetUnexplored: 无法操作尚未探索的区域
+			NoAmmo: 缺少此武器所需的弹药
+			NoMana: 魔力不足，等待恢复后再攻击
+			CannotAttack: 当前状态无法使用武器
+			UnsupportedWeapon: 此武器尚未适配三维攻击
+			ReturnReady: "[{0}] 返回二维"
+			ReturnBlocked: 此处无法返回二维 · 移动到空旷、干燥的位置
+			ReturnUnexplored: 探索迷雾：此处尚未探索，无法返回二维
+			Inventory: 背包
+			InventoryHint: E／Esc关闭 · 左键移动或堆叠 · 右键拆分 · 数字键选快捷栏
+			Pause: 游戏菜单
+			Resume: 继续三维飞行
+			ReturnHere: 在此处返回二维
+			ReturnStart: 返回出发位置
+		}
+
+		Hud: {
+			Title: 三维飞行  |  原世界运行中
+			ReturnReady: 绿色：此处容得下角色，可以返回二维。
+			ReturnBlocked: 红色：角色被遮挡或接触液体，请寻找其他落点。
+		}
+	}
+}

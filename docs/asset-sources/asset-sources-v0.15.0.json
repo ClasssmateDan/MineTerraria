@@ -1,0 +1,37 @@
+{
+  "minecraftVersion": "1.21.1",
+  "source": "Official Mojang Java client",
+  "manifest": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+  "clientUrl": "https://piston-data.mojang.com/v1/objects/30c73b1c5da787909b2f73340419fdf13b9def88/client.jar",
+  "clientSha1": "30c73b1c5da787909b2f73340419fdf13b9def88",
+  "textures": [
+    {
+      "path": "DimensionalTerraria/Textures/Minecraft/crafting_table_front.png",
+      "archiveEntry": "assets/minecraft/textures/block/crafting_table_front.png",
+      "sha256": "16C23B5802C71AA439B9D5A5707D304F1CF84D45A08C146AA4078CD5073067F2"
+    },
+    {
+      "path": "DimensionalTerraria/Textures/Minecraft/crafting_table_side.png",
+      "archiveEntry": "assets/minecraft/textures/block/crafting_table_side.png",
+      "sha256": "C962364F8165A2702CEB42EED59F1983194E4B7FD0A08DE8790617F6C06BBAAB"
+    },
+    {
+      "path": "DimensionalTerraria/Textures/Minecraft/crafting_table_top.png",
+      "archiveEntry": "assets/minecraft/textures/block/crafting_table_top.png",
+      "sha256": "8046B35B6ED5696EC21A0135B8A897F35ACD7F2500B6B2E4B5B28AE4D25AC76C"
+    },
+    {
+      "path": "DimensionalTerraria/Textures/Minecraft/oak_planks.png",
+      "archiveEntry": "assets/minecraft/textures/block/oak_planks.png",
+      "sha256": "3A33DB67A3BA30537D0890A5CB37C8087CA336BE89CBB1393A71C23224E361A8"
+    },
+    {
+      "path": "DimensionalTerraria/Textures/Minecraft/oak_boat.png",
+      "archiveEntry": "assets/minecraft/textures/item/oak_boat.png",
+      "sha256": "6F80C4BA265F5FCE50C37EE19901DEC90001891382D759B51ECF5D6FC9B382CA"
+    }
+  ],
+  "prefabIcon": "Runtime 32x40 thumbnail cropped from resting frame 0 of the existing IronGolem sprite atlas",
+  "preview": ".dev/v0.14.0-preview.png",
+  "boatAtlas": "Native 16x16 transparent icon, nearest-neighbor to 48x32, split into six padded frames in a 54x36 CPU atlas"
+}
